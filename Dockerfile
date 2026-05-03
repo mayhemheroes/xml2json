@@ -1,5 +1,5 @@
 # Build Stage
-FROM --platform=linux/amd64 ubuntu:20.04 as builder
+FROM --platform=linux/amd64 ubuntu:20.04 AS builder
 
 ## Install build dependencies.
 RUN apt-get update && \
