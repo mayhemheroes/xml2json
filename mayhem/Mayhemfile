@@ -1,0 +1,9 @@
+project: xml2json
+target: xml2json
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/xml2json/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_xml2json
+    libfuzzer: true
